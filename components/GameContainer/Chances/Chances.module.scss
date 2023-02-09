@@ -1,0 +1,25 @@
+.Chances {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  .__btn {
+    background-image: url(/yellow-btn.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+    &.failed {
+      background-image: url(/red-btn.svg);
+    }
+  }
+
+  @media screen and (max-width: 1480px) {
+    margin-top: 24px;
+    .__btn {
+      width: 140px;
+      height: 140px;
+      margin: 24px;
+    }
+  }
+}

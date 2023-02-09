@@ -1,0 +1,35 @@
+.GiftsContainers {
+  min-height: 55vh;
+  .__title {
+    font-size: 34px;
+    font-weight: bolder;
+    .__count {
+      color: #4673ff;
+      padding-left: 6px;
+    }
+    .__value {
+      color: #ff9800;
+    }
+  }
+
+  .__text {
+    line-height: 3;
+    color: #002e71;
+    font-size: 18px;
+  }
+
+  .__giftImage {
+    max-width: 500px;
+  }
+
+  @media screen and (max-width: 1480px) {
+    margin: 110px 0 ;
+    .__title {
+      font-size: 38px;
+    }
+    .__text {
+      margin-top: 32px;
+      font-size: 22px;
+    }
+  }
+}

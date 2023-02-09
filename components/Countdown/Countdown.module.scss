@@ -1,0 +1,67 @@
+.Countdown {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    max-width: 664px;
+  .__timeBox {
+    width: 10rem !important;
+    height: 10rem;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      transform: scale(0.8);
+      box-shadow: 0px 0px 17px 0.6px #000000;
+    }
+    .__numberCard {
+      width: 8.3rem !important;
+      height: 8.3rem;
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+        0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+
+      .__numberContainer {
+        height: 5.3rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        .__number {
+          text-align: center;
+          font-weight: bolder;
+          font-size: 64px;
+          color: #ff9800;
+          position: absolute;
+          transition: all 1s ease;
+          display: none;
+          top: 0;
+          right: 50%;
+          transform: translate(50%, 0);
+        }
+        .__numberPreview {
+          display: block;
+          top: -4rem;
+          opacity: 0;
+        }
+        .__numberActive {
+          display: block;
+          opacity: 1;
+          opacity: 1;
+          top: 0;
+        }
+        .__numberNext {
+          display: block;
+          top: 4rem;
+          opacity: 0;
+        }
+      }
+      .__text {
+        text-align: center;
+        font-size: 20px;
+        color: #99abc8;
+      }
+    }
+  }
+}

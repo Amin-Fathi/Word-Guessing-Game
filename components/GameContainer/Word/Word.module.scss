@@ -1,0 +1,60 @@
+.Word {
+  display: flex;
+  justify-content: center;
+  .__Letter {
+    color: transparent;
+    background-color: transparent;
+    position: relative;
+    cursor: default;
+    box-shadow: none;
+    padding: 0 0 0.2rem 0;
+    padding-top: 15px;
+    margin: 8px;
+    width: 5rem;
+    cursor: pointer;
+    height: 4.4rem;
+    vertical-align: middle;
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+    &:after {
+      content: "";
+      border: solid white;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: #fff;
+      height: 8px;
+      width: 5rem;
+      border-radius: 8px;
+    }
+    span {
+      font-weight: bolder;
+      font-size: 40px;
+      margin-top: -24px;
+      display: inline-block;
+    }
+
+    &.accepted {
+      color: #fff;
+    }
+  }
+
+  @media screen and (max-width: 1480px) {
+    margin-top: 24px;
+    .__Letter {
+      padding: 16px;
+      margin: 16px;
+      width: 7rem;
+      height: 7.4rem;
+      &:after {
+        width: 7rem;
+      }
+      span {
+        font-size: 64px;
+      }
+    }
+
+   
+  }
+}

@@ -1,0 +1,67 @@
+.GameContainer {
+  padding: 64px;
+  .__border {
+    padding: 44px;
+    box-sizing: content-box;
+    width: 100vh;
+    height: 100vh;
+    border: 1px dashed blue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+
+    .__main {
+      height: inherit;
+      width: inherit;
+      padding: 16px;
+      background-color: #4573ff;
+      display: flex;
+      justify-content: center;
+      border-radius: inherit;
+
+      .__title {
+        font-size: 26px;
+        color: #fff;
+        margin-top: 48px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .__dividerDot {
+        margin: 1.5rem 12rem;
+      }
+
+      .__game {
+        margin-top: 24px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1480px) {
+    margin: 72px 0 0 0;
+    padding: 56px 0 0 0;
+    .__border {
+      padding: 0;
+      border: 0;
+      height: auto;
+      width: 100%;
+      .__main {
+        padding: 74px 56px;
+        border-radius: 0;
+        min-height: 100vh;
+        min-width: 740px;
+        .__title {
+          font-size: 40px;
+          text-align: right;
+          margin: 16px 0;
+          padding:0 40px;
+        }
+
+        .__dividerDot {
+          margin: 16px 0;
+          padding: 0 40px;
+        }
+      }
+    }
+  }
+}

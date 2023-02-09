@@ -1,0 +1,16 @@
+.DividerDot {
+  display: flex;
+  flex-direction: row;
+  .__Dot {
+    background-color: #000;
+    width: 13px;
+    height: 13px;
+    margin-left: 13px;
+    &.orange1 {
+      background-color: #ff6900;
+    }
+    &.orange2 {
+      background-color: #ff9800;
+    }
+  }
+}

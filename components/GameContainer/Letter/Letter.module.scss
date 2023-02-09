@@ -1,0 +1,41 @@
+.Letter {
+  padding-top: 12px;
+  margin: 8px;
+  background-image: url(/btn-w.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 4rem;
+  height: 4.4rem;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+  list-style-type: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 28px;
+  color: #0c7ff2;
+  &.span {
+    color: #0c7ff2;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    user-select: none;
+  }
+  &.disabled {
+    cursor: not-allowed;
+    color: #fff;
+  }
+  &.accepted {
+    background-image: url(/btn-ok.svg);
+  }
+  &.failed {
+    background-image: url(/btn-failed.svg);
+  }
+
+  @media screen and (max-width: 1480px) {
+    padding: 8px;
+    width: 7rem;
+    height: 7.4rem;
+    font-size: 52px;
+  }
+}
